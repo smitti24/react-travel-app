@@ -33,7 +33,7 @@ function Navbar() {
         <li>View</li>
         <li>Book</li>
       </ul>
-      <div className="hidden md:flex ">
+      <div className="hidden md:flex mr-4">
         <BiSearch className="mr-2" size={20} />
         <BsPerson size={20} />
       </div>
