@@ -10,6 +10,7 @@ import {
   FaPinterest,
   FaYoutube,
 } from "react-icons/fa";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -20,18 +21,38 @@ function Navbar() {
   };
 
   return (
-    <div className="flex justify-between items-center w-screen h-20 z-10 fixed px-4 rounded text-white">
+    <div className="flex justify-between items-center w-screen h-20 z-10 fixed px-4 rounded text-slate-200">
       <div>
         <h1 onClick={handleNav} className={logo ? "hidden" : "block"}>
           BEACHES.
         </h1>
       </div>
       <ul className="hidden md:flex ">
-        <li>Home</li>
-        <li>Destination</li>
-        <li>Travel</li>
-        <li>View</li>
-        <li>Book</li>
+        <li>
+          <Link to="home" smooth={true} offset={100} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="destination" smooth={true} offset={100} duration={500}>
+            Destination
+          </Link>
+        </li>
+        <li>
+          <Link to="travel" smooth={true} offset={500} duration={500}>
+            Travel
+          </Link>
+        </li>
+        <li>
+          <Link to="view" smooth={true} offset={0} duration={500}>
+            View
+          </Link>
+        </li>
+        <li>
+          <Link to="book" smooth={true} offset={100} duration={500}>
+            Book
+          </Link>
+        </li>
       </ul>
       <div className="hidden md:flex mr-4">
         <BiSearch className="mr-2" size={20} />

@@ -4,7 +4,7 @@ import beachVid from "../assets/beachVid.mp4";
 
 function Hero() {
   return (
-    <div className="w-full h-screen relative">
+    <div name="home" className="w-full h-screen relative">
       <video
         src={beachVid}
         className="w-full h-full object-cover"

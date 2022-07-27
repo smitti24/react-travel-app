@@ -4,7 +4,10 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 
 function Search() {
   return (
-    <div className="max-w-[1240px] grid lg:grid-cols-3 gap-4 px-4 py-16 mx-auto">
+    <div
+      name="book"
+      className="max-w-[1240px] grid lg:grid-cols-3 gap-4 px-4 py-16 mx-auto"
+    >
       <div className="lg:col-span-2 flex flex-col justify-evenly">
         <div>
           <h2 className="uppercase">
