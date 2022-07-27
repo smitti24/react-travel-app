@@ -75,11 +75,31 @@ function Navbar() {
       >
         <h1>BEACHES.</h1>
         <ul>
-          <li className="border-b">Home</li>
-          <li className="border-b">Destination</li>
-          <li className="border-b">Travel</li>
-          <li className="border-b">View</li>
-          <li className="border-b">Book</li>
+          <li className="border-b" onClick={handleNav}>
+            <Link to="home" smooth={true} offset={100} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link to="destination" smooth={true} offset={100} duration={500}>
+              Destination
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link to="travel" smooth={true} offset={500} duration={500}>
+              Travel
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link to="view" smooth={true} offset={0} duration={500}>
+              View
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link to="book" smooth={true} offset={100} duration={500}>
+              Book
+            </Link>
+          </li>
           <div className="flex flex-col">
             <button className="my-6">Search</button>
             <button>Account</button>
